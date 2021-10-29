@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-list.component.scss']
 })
 export class PostListComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
