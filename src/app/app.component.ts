@@ -6,10 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // post: {
-  //   title: string,
-  //   cotent: string,
-  //   loveIts: number,
-  //   created_at: Date
-  // }
+  
+  public mesPost:monTableauPost[] = [
+    {title:"Mon premier post", content:"Lorem ipsum",loveIts:0},
+    {title:"Mon deuxième post", content:"Lorem ipsum",loveIts:0},
+    {title:"Mon troisième post", content:"Lorem ipsum",loveIts:0}
+  ];
+
+}
+
+export interface monTableauPost {
+  title:string,
+  content:string,
+  loveIts:number,
+
 }
