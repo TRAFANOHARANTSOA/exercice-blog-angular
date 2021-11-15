@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   
-  public mesPost:monTableauPost[] = [
+  public mesPost:Post[] = [
     {title:"Mon premier post", content:"Lorem ipsum",loveIts:0},
     {title:"Mon deuxième post", content:"Lorem ipsum",loveIts:0},
     {title:"Mon troisième post", content:"Lorem ipsum",loveIts:0}
@@ -15,7 +15,7 @@ export class AppComponent {
 
 }
 
-export interface monTableauPost {
+export interface Post {
   title:string,
   content:string,
   loveIts:number,
