@@ -10,16 +10,14 @@ import { Post } from 'post';
 
 export class AppComponent {
   title = 'BLOGNAKA';
-  
-  @Input() post: Post = {
-    title : 'Mon premier post',
-    content: 'Lorem ipsum',  
-    loveIts: 0 
-  }
-  constructor() {
+  posts: Post[] = [
+    {title: 'Mon premier post', content: 'Lorem ipsum', loveIts: 0},
+    {title: 'Mon deuxième post', content: 'Lorem ipsum', loveIts: 0},
+    {title: 'Mon troisième post', content: 'Lorem ipsum', loveIts: 0}
+];
 
-    
-  }
 
+  constructor() {  
+  }
 }
 
