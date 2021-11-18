@@ -3,5 +3,8 @@
 <p>{{titles}}</p>
 <li >
 </li>
-<app-post-list-item *ngFor= 'let post of postMan'> {{post}} </app-post-list-item>
+<app-post-list-item *ngFor= 'let post of postMan' 
+                    [title]="post.title"
+                    [content]="post.content"
+                    [loveIts]="post.loveIts"> {{post}} </app-post-list-item>
 </ul>
