@@ -1,11 +1,12 @@
 <div class="container">
   <div class="row">
     <h1>{{title}} </h1>
-    <div>{{post.title | uppercase}} </div>
-    <div>{{post.content}} </div>
-    <div>{{post.loveIts}} </div>
-     <div class="col-xw-12">
-       <app-post-list></app-post-list>
-    </div>
+        <div class="col-xw-12">
+         <app-post-list [titles]='title'
+                        [postMan]='posts'         
+         ></app-post-list> 
+
+          
+   </div>
   </div>
 </div>
