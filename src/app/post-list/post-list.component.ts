@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Post } from 'post';
 
 @Component({
   selector: 'app-post-list',
@@ -6,6 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./post-list.component.scss']
 })
 export class PostListComponent implements OnInit {
+ 
+  @Input() titles = '';
+  @Input() postMan: Post[] = [];
+
+  
+
   
   constructor() { }
 
