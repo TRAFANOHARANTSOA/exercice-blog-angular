@@ -11,6 +11,7 @@ export class PostLIstItemComponent implements OnInit {
   @Input() title: string | undefined;
   @Input() content: string | undefined;
   @Input() loveIts: number | undefined;
+  @Input() create_at: Date | undefined;
   
   constructor() {
   }
