@@ -1,11 +1,11 @@
 <li class="list-group-item">
 <h1>{{title}} <span>{{create_at | date : 'short'}}</span></h1>
 <p>{{content}}</p>
-<p>{{loveIts}}</p>
- <button class="btn btn-success" (click)="addLoveIts()">
+<p>{{ getloveIts() }}</p>
+ <button class="btn btn-success" (click)="onLoveIts()">
         Love it!
 </button>
-<button class="btn btn-danger">
+<button class="btn btn-danger" (click)="onDontLoveIts()">
         Don't love it!
 </button>
 </li>
