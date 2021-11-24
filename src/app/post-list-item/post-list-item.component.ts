@@ -12,7 +12,6 @@ export class PostLIstItemComponent implements OnInit {
   @Input() content: string | undefined;
   @Input() loveIts: any;
   @Input() create_at: Date | undefined;
-  @Input() post: Post[] = [];
   
   likeIts: number | undefined;
   dontLikeIts: number | undefined;
@@ -22,17 +21,14 @@ export class PostLIstItemComponent implements OnInit {
 
   ngOnInit() {
   }
-
   addLoveIts() {
   ++ this.loveIts;
   console.log(this.loveIts);
     return this.loveIts;
  } 
-
   takeLoveIts(){
     -- this.loveIts;
     console.log(this.loveIts);
     return this.loveIts;
   }
-
 }
