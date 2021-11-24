@@ -1,4 +1,5 @@
 import { Component, Input, InputDecorator, OnInit } from '@angular/core';
+import { Post} from 'post';
 
 @Component({
   selector: 'app-post-list-item',
@@ -9,13 +10,13 @@ export class PostLIstItemComponent implements OnInit {
 
   @Input() title: string | undefined;
   @Input() content: string | undefined;
-  @Input() loveIts: number | undefined;
+  @Input() loveIts: any;
   @Input() create_at: Date | undefined;
+  @Input() post: Post[] = [];
   
-  numberOfLoveIts: number = 0;
   likeIts: number | undefined;
   dontLikeIts: number | undefined;
-  
+
   constructor() {
   }
 
@@ -23,13 +24,15 @@ export class PostLIstItemComponent implements OnInit {
   }
 
   addLoveIts() {
-  this.likeIts = ++ this.numberOfLoveIts;
-  console.log(this.numberOfLoveIts);
-  return this.likeIts;
+  ++ this.loveIts;
+  console.log(this.loveIts);
+    return this.loveIts;
  } 
+
   takeLoveIts(){
-    this.dontLikeIts = -- this.numberOfLoveIts;
-    console.log(this.numberOfLoveIts);
-    return this.dontLikeIts;
+    -- this.loveIts;
+    console.log(this.loveIts);
+    return this.loveIts;
   }
+
 }
