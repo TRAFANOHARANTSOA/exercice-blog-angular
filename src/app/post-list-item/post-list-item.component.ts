@@ -13,8 +13,6 @@ export class PostLIstItemComponent implements OnInit {
   @Input() loveIts: any;
   @Input() create_at: Date | undefined;
   
-  likeIts: number | undefined;
-  dontLikeIts: number | undefined;
 
   constructor() {
   }
